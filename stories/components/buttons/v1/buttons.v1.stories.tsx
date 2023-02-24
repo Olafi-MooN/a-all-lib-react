@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes } from "react";
+import React from "react";
 import { Meta, Story } from "@storybook/react";
 import { AllButton } from "../../../../src/a-all/components/buttons/v1/button.v1";
 import { IAllButtonV1Props } from "../../../../src/a-all/components/buttons/v1/button.v1.interface";
