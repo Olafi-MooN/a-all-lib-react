@@ -1,0 +1,17 @@
+<!-- Colors.stories.mdx -->
+
+import { Meta, ColorPalette, ColorItem, Canvas } from "@storybook/addon-docs";
+import { theme } from "./colors";
+
+<Meta title="Global Styles/Colors/Colors" />
+
+<Canvas withSource="open">
+  <ColorPalette>
+    {theme.map((item, index) => {
+      let variant = {};
+      item?.variants?.map((a, i) => (variant[`${item.name}-${i}`] = a));
+      console.log(variant);
+      return <ColorItem key={index} title={item?.name} colors={variant} />;
+    })}
+  </ColorPalette>
+</Canvas>
