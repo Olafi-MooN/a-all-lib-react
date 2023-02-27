@@ -21,9 +21,22 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<IAllButtonV1Props> = (args) => (
-  <AllButton {...args}>Text</AllButton>
+  <AllButton {...args}>Button</AllButton>
 );
 
-export const ButtonV1 = Template.bind({});
+export const ButtonPrimary = Template.bind({});
 
-ButtonV1.args = {};
+ButtonPrimary.args = {
+  configStyle: {
+    bg_color: "dark",
+    size: "large",
+  },
+} as IAllButtonV1Props;
+
+export const ButtonPrimary2 = Template.bind({});
+ButtonPrimary2.args = {
+  configStyle: {
+    bg_color: "primary",
+    size: "large",
+  },
+} as IAllButtonV1Props;

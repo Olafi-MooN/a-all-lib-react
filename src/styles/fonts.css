@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.a-all_googleapis.a-all_com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --font-family: 'Nunito Sans', sans-serif;
@@ -24,80 +24,62 @@
   --font-weight-regular: 400;
 }
 
-.title-1 {
+.a-all_title-1 {
   font-size: var(--font-size-60);
   line-height: var(--line-height-72);
   font-weight: var(--font-weight-bold-x);
 }
 
-.title-2 {
+.a-all_title-2 {
   font-size: var(--font-size-48);
   line-height: var(--line-height-56);
   font-weight: var(--font-weight-bold-b);
 }
 
-.title-3 {
+.a-all_title-3 {
   font-size: var(--font-size-34);
   line-height: var(--line-height-40);
   font-weight: var(--font-weight-bold-x);
 }
 
-.headline {
+.a-all_headline {
   font-size: var(--font-size-24);
   line-height: var(--line-height-32);
   font-weight: var(--font-weight-bold-x);
 }
 
-.sub-headline {
+.a-all_sub-headline {
   font-size: var(--font-size-18);
   line-height: var(--line-height-24);
   font-weight: var(--font-weight-bold-b);
 }
 
-.text {
+.a-all_text {
   font-size: var(--font-size-16);
   line-height: var(--line-height-24);
   font-weight: var(--font-weight-regular);
 }
 
-.text-bold {
+.a-all_text-bold {
   font-size: var(--font-size-16);
   line-height: var(--line-height-24);
   font-weight: var(--font-weight-bold);
 }
 
-.text-sm {
+.a-all_text-sm {
   font-size: var(--font-size-14);
   line-height: var(--line-height-24);
   font-weight: var(--font-weight-regular);
 }
 
-.text-sm-bold {
+.a-all_text-sm-bold {
   font-size: var(--font-size-14);
   line-height: var(--line-height-24);
   font-weight: var(--font-weight-bold);
 }
 
-.text-caption {
+.a-all_text-caption {
   font-size: var(--font-size-12);
   line-height: var(--line-height-16);
   font-weight: var(--font-weight-bold-s);
-}
-
-.text-btn-large {
-  font-size: var(--font-size-16);
-  line-height: var(--line-height-24);
-  font-weight: var(--font-weight-bold-s);
-}
-
-.text-btn-medium {
-  font-size: var(--font-size-14);
-  line-height: var(--line-height-16);
-  font-weight: var(--font-weight-bold-b);
-}
-
-.text-btn-small {
-  font-size: var(--font-size-12);
-  line-height: var(--line-height-16);
-  font-weight: var(--font-weight-bold-b);
 }
