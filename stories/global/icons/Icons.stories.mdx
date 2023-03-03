@@ -2,7 +2,7 @@
 
 import { Meta, Title, IconGallery, IconItem } from "@storybook/addon-docs/";
 
-import { AIconsV1 } from "../../../src/a-all/components/a-icons/v1/icon.v1.tsx";
+import { AIconsV1 } from "../../../src/components/icons/v1/icon.v1.tsx";
 import { icons } from "../../../src/assets/icons";
 
 <Meta title="Global Styles/Icons/Iconography" />
@@ -12,9 +12,9 @@ import { icons } from "../../../src/assets/icons";
 <br />
 
 <IconGallery>
-  {icons.map((name) => (
-    <IconItem name={name}>
-      <AIconsV1 name={name} />
-    </IconItem>
-  ))}
+	{icons.map((name) => (
+		<IconItem name={name}>
+			<AIconsV1 name={name} />
+		</IconItem>
+	))}
 </IconGallery>

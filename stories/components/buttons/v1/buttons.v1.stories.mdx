@@ -1,0 +1,19 @@
+import React from "react";
+import { Meta, Story } from "@storybook/react";
+import { AllButton } from "../../../../src/components/buttons/v1/button.v1";
+import { IAllButtonV1Props } from "../../../../src/components/buttons/v1/button.v1.interface";
+import { ConfigHtmlProps } from "../../../../src/@types/ConfigHtmlProps";
+
+export const meta: Meta = {
+  title: "components/buttons/v1",
+  component: AllButton,
+  argTypes: {},
+};
+
+export const Template: Story<IAllButtonV1Props> = (args) => (
+  <AllButton {...args}>Button</AllButton>
+);
+
+export Object.keys(ConfigHtmlProps).map(_ => {
+  console.log(ConfigHtmlProps);
+})

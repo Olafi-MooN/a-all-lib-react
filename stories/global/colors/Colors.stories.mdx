@@ -6,12 +6,12 @@ import { theme } from "./colors";
 <Meta title="Global Styles/Colors/Colors" />
 
 <Canvas withSource="open">
-  <ColorPalette>
-    {theme.map((item, index) => {
-      let variant = {};
-      item?.variants?.map((a, i) => (variant[`${item.name}-${i}`] = a));
-      console.log(variant);
-      return <ColorItem key={index} title={item?.name} colors={variant} />;
-    })}
-  </ColorPalette>
+	<ColorPalette>
+		{theme.map((item, index) => {
+			let variant = {};
+			item?.variants?.map((a, i) => (variant[`${item.name}-${i}`] = a));
+			console.log(variant);
+			return <ColorItem key={index} title={item?.name} colors={variant} />;
+		})}
+	</ColorPalette>
 </Canvas>
