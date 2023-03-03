@@ -8,6 +8,7 @@ const AllButton = (props: IAllButtonV1Props) => {
 
 	return <button {...props} 
 	className={`a-all_btn-v1 ${configStyle} 
+	
 	${props?.className}`} />;
 };
 
