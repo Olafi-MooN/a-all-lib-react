@@ -6,7 +6,8 @@ import "./button.v1.css";
 const AllButton = (props: IAllButtonV1Props) => {
 	const configStyle = objectToClassName(props?.configStyle);
 
-	return <button {...props} className={`a-all_btn-v1 ${configStyle} ${props?.className}`} />;
+	return <button {...props} 
+	className={`a-all_btn-v1 ${configStyle} ${props?.className}`} />;
 };
 
 AllButton.defaultProps = {
