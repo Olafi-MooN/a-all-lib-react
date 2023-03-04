@@ -25,6 +25,7 @@
 		"storybook": "start-storybook -p 6006 -s public",
 		"formatted": "npx prettier --write .",
 		"build-storybook": "build-storybook -s public",
+		"configure-husky": "npx husky install && npx husky add .husky/pre-commit 'npx --no-install lint-staged'",
 		"prepare": "husky install"
 	},
 	"eslintConfig": {
@@ -69,28 +70,22 @@
 		"@storybook/react": "^6.5.16",
 		"@storybook/testing-library": "0.0.13",
 		"@storybook/theming": "^6.5.16",
+		"@typescript-eslint/eslint-plugin": "^5.54.0",
+		"@typescript-eslint/parser": "^5.54.0",
 		"babel-plugin-named-exports-order": "0.0.2",
 		"eslint": "^8.35.0",
-		"husky": "^8.0.3",
+		"eslint-config-prettier": "8.6.0",
+		"eslint-plugin-react": "^7.32.2",
+		"husky": "^8.0.0",
 		"lint-staged": "^13.1.2",
-		"prettier": "^2.8.4",
+		"prettier": "2.8.4",
 		"prop-types": "^15.8.1",
 		"webpack": "^5.75.0"
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
 	"lint-staged": {
-		"*.{js,jsx,tsx,ts}": [
-			"prettier --write",
-			"eslint --fix",
-			"git add"
-		],
-		"*.{html,css,less,ejs}": [
-			"prettier --write",
-			"git add"
+		"**/*.{js,jsx,ts,tsx}": [
+			"npx prettier --write",
+			"npx eslint --fix"
 		]
 	}
 }
