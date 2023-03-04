@@ -1,5 +1,5 @@
-import { ButtonHTMLAttributes } from "react";
-import { ConfigHtmlProps } from "../../../@types/ConfigHtmlProps";
+import { ButtonHTMLAttributes } from 'react';
+import { ConfigHtmlProps } from '../../../@types/ConfigHtmlProps';
 interface IAllButtonConfigV1Props {
 	size: ConfigHtmlProps.size;
 	bg_color: ConfigHtmlProps.bg_color;

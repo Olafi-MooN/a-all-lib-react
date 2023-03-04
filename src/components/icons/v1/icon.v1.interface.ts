@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react";
+import { HTMLAttributes } from 'react';
 
 interface AIconsV1Props extends HTMLAttributes<HTMLElement> {
 	name: string;

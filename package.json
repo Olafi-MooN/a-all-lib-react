@@ -25,7 +25,8 @@
 		"storybook": "start-storybook -p 6006 -s public",
 		"formatted": "npx prettier --write .",
 		"build-storybook": "build-storybook -s public",
-		"configure-husky": "npx husky install && npx husky add .husky/pre-commit 'npx --no-install lint-staged'",
+		"lint": "eslint .",
+		"lint:fix": "npx prettier --write . && eslint --fix .",
 		"prepare": "husky install"
 	},
 	"eslintConfig": {
@@ -74,18 +75,12 @@
 		"@typescript-eslint/parser": "^5.54.0",
 		"babel-plugin-named-exports-order": "0.0.2",
 		"eslint": "^8.35.0",
-		"eslint-config-prettier": "8.6.0",
+		"eslint-config-prettier": "^8.6.0",
+		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"husky": "^8.0.0",
-		"lint-staged": "^13.1.2",
-		"prettier": "2.8.4",
+		"prettier": "^2.8.4",
 		"prop-types": "^15.8.1",
 		"webpack": "^5.75.0"
-	},
-	"lint-staged": {
-		"**/*.{js,jsx,ts,tsx}": [
-			"npx prettier --write",
-			"npx eslint --fix"
-		]
 	}
 }

@@ -1,9 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "material-icons/iconfont/material-icons.css";
-import "./colors.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import 'material-icons/iconfont/material-icons.css';
+import './colors.css';
 
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
 	<React.StrictMode>
@@ -11,4 +11,4 @@ root.render(
 	</React.StrictMode>
 );
 
-export * from "./a-all";
+export * from './a-all';

@@ -1,2 +1,2 @@
-import "../../../colors.css";
-export * from "./v1";
+import '../../../colors.css';
+export * from './v1';

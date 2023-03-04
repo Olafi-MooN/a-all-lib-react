@@ -4,12 +4,12 @@ type TypeObjectToClassName<T = string | any> = {
 
 const objectToClassName = (obj: TypeObjectToClassName): string => {
 	if (!obj || Object.keys(obj).length === 0) {
-		return "";
+		return '';
 	}
 
 	const classNameParts = Object.entries(obj).map(([key, value]) => `a-all_${key}-${value?.toLocaleLowerCase()}`);
 
-	return classNameParts.join(" ");
+	return classNameParts.join(' ');
 };
 
 export { objectToClassName };
