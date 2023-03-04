@@ -1,9 +1,9 @@
 <!-- Typography.stories.mdx -->
 
-import { Meta, Typeset } from "@storybook/addon-docs/blocks";
-import { Canvas, Story } from "@storybook/addon-docs";
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+import { Canvas, Story } from '@storybook/addon-docs';
 
-export const SampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
 
 <Meta title="Global Styles/Typography/Typography" />
 
@@ -21,19 +21,19 @@ export const SampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing el
 #### Importação de fontes
 
 As fontes são importadas em um arquivo css em sua aplicação, por padrão a aplicação trás a
-font Nunito Sans que pode ser encontrada no [google-fonts](https://fonts.google.com/ "ir para google fonts")
+font Nunito Sans que pode ser encontrada no [google-fonts](https://fonts.google.com/ 'ir para google fonts')
 
 _styles/fonts.css_
 
 ```css
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 ```
 
 Toda fonte da biblioteca usa a variável _--font-family_ que esta presente no pseudo elemento :root.
 
 ```css
 :root {
-	--font-family: "Nunito Sans", sans-serif;
+	--font-family: 'Nunito Sans', sans-serif;
 }
 ```
 
@@ -41,7 +41,7 @@ Existe algumas variações para o tamanho, peso, altura de uma fonte, que tambem
 
 ```css
 :root {
-	--font-family: "Nunito Sans", sans-serif;
+	--font-family: 'Nunito Sans', sans-serif;
 	--font-size-60: 60px;
 	--font-size-48: 48px;
 	--font-size-34: 34px;

@@ -1,44 +1,44 @@
-import "material-icons/iconfont/material-icons.css";
-import "../src/styles/colors.css";
-import "../src/styles/fonts.css";
-import "../src/styles/global.css";
+import 'material-icons/iconfont/material-icons.css';
+import '../src/styles/colors.css';
+import '../src/styles/fonts.css';
+import '../src/styles/global.css';
 
-import { addParameters } from "@storybook/client-api";
+import { addParameters } from '@storybook/client-api';
 
 addParameters({
 	controls: {
 		expanded: true,
-		sort: "requiredFirst",
+		sort: 'requiredFirst',
 	},
-	viewMode: "docs",
+	viewMode: 'docs',
 	previewTabs: {
-		"storybook/docs/panel": {
+		'storybook/docs/panel': {
 			index: -1,
 		},
-		canvas: { title: "Sandbox" },
+		canvas: { title: 'Sandbox' },
 	},
 	options: {
 		storySort: {
-			order: ["Welcome", "Global Styles", "components"],
+			order: ['Welcome', 'Global Styles', 'components'],
 		},
 	},
 });
 
 export const parameters = {
-	actions: { argTypesRegex: "^on[A-Z].*" },
+	actions: { argTypesRegex: '^on[A-Z].*' },
 	controls: {
 		matchers: {
 			color: /(background|color)$/i,
 			date: /Date$/,
 		},
 	},
-	layout: "centered",
+	layout: 'centered',
 	backgrounds: {
-		default: "dark",
+		default: 'dark',
 		values: [
 			{
-				name: "dark",
-				value: "#F5F6F8",
+				name: 'dark',
+				value: '#F5F6F8',
 			},
 		],
 	},
