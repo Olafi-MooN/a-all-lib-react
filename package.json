@@ -76,5 +76,21 @@
 		"prettier": "^2.8.4",
 		"prop-types": "^15.8.1",
 		"webpack": "^5.75.0"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js,jsx,tsx,ts}": [
+			"prettier --write",
+			"eslint --fix",
+			"git add"
+		],
+		"*.{html,css,less,ejs}": [
+			"prettier --write",
+			"git add"
+		]
 	}
 }
