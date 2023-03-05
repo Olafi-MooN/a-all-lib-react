@@ -13,11 +13,8 @@ export const Primary = Template.bind({});
 Primary.args = {
 	configStyle: {
 		bg_color: 'PRIMARY',
-
 		radius: '1',
-
 		size: 'MEDIUM',
-
 		color: 'WHITE',
 	} as IAllButtonConfigV1Props,
 };

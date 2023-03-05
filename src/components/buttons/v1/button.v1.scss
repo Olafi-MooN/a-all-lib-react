@@ -1,0 +1,16 @@
+@import '../../../styles/styles.scss';
+
+.a-all_btn-v1 {
+	border: none;
+	padding: $p-2;
+	cursor: pointer;
+	transition: transform all 0.2s ease-in-out;
+}
+
+.a-all_btn-v1:active {
+	transform: scale(0.95) translate3d(0, 0, 0);
+}
+
+.a-all_btn-v1:hover {
+	filter: brightness(0.9);
+}

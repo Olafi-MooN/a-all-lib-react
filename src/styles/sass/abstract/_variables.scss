@@ -1,0 +1,23 @@
+/* Variant */
+$p-variant: 0.5;
+$m-variant: 0.5;
+$radius-variant: 0.4;
+
+/* Padding */
+$p-1: calc(1rem * #{$p-variant});
+$p-2: calc(2rem * #{$p-variant});
+$p-3: calc(3rem * #{$p-variant});
+$p-4: calc(4rem * #{$p-variant});
+
+/* Margin */
+$m-1: calc(1rem * #{$m-variant});
+$m-2: calc(2rem * #{$m-variant});
+$m-3: calc(3rem * #{$m-variant});
+$m-4: calc(4rem * #{$m-variant});
+
+/* border radius */
+$radius-1: calc(0.7rem * #{$radius-variant});
+$radius-2: calc(0.8rem * #{$radius-variant});
+$radius-3: calc(0.9rem * #{$radius-variant});
+$radius-4: calc(1rem * #{$radius-variant});
+$radius-full: 100%;
