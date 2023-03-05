@@ -1,16 +1,16 @@
-.a-all_size-large {
+.a-all_size--large {
 	font-size: var(--font-size-16);
 	line-height: var(--line-height-24);
 	font-weight: var(--font-weight-bold-s);
 }
 
-.a-all_size-medium {
+.a-all_size--medium {
 	font-size: var(--font-size-14);
 	line-height: var(--line-height-16);
 	font-weight: var(--font-weight-bold-b);
 }
 
-.a-all_size-small {
+.a-all_size--small {
 	font-size: var(--font-size-12);
 	line-height: var(--line-height-16);
 	font-weight: var(--font-weight-bold-b);

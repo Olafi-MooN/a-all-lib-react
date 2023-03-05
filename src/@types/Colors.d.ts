@@ -15,4 +15,10 @@ enum EColors {
 	WHITE = 'white',
 }
 
-export { EColors };
+enum EColorsKind {
+	PRIMARY = EColors.PRIMARY,
+	POSITIVE = EColors.POSITIVE,
+	NEGATIVE = EColors.NEGATIVE,
+}
+
+export { EColors, EColorsKind };

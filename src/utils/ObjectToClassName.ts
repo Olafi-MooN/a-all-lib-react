@@ -7,7 +7,7 @@ const objectToClassName = (obj: TypeObjectToClassName): string => {
 		return '';
 	}
 
-	const classNameParts = Object.entries(obj).map(([key, value]) => `a-all_${key}-${value?.toLocaleLowerCase()}`);
+	const classNameParts = Object.entries(obj).map(([key, value]) => `a-all_${key}--${value?.toLocaleLowerCase().replaceAll('_', '-')}`);
 
 	return classNameParts.join(' ');
 };
