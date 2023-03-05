@@ -1,0 +1,45 @@
+$color-primary: #0073ea;
+$color-primary-hover: #0060b9;
+$color-primary-selected: #cce5ff;
+
+$color-positive: #258750;
+$color-positive-hover: #007038;
+$color-positive-selected: #bbdbc9;
+
+$color-negative: #d83a52;
+$color-negative-hover: #d83a52;
+$color-negative-selected: #f4c3cb;
+
+$color-dark: #323338;
+$color-wolf-grey: #c5c7d0;
+$color-ui-grey: #e6e9ef;
+$color-riverstone: #f5f6f8;
+$color-white: #ffffff;
+
+$colors: (
+	"primary": $color-primary,
+	"primary-hover": $color-primary-hover,
+	"primary-selected": $color-primary-selected,
+	"positive": $color-positive,
+	"positive-hover": $color-positive-hover,
+	"positive-selected": $color-positive-selected,
+	"negative": $color-negative,
+	"negative-hover": $color-negative-hover,
+	"negative-selected": $color-negative-selected,
+	"dark": $color-dark,
+	"wolf-grey": $color-wolf-grey,
+	"ui-grey": $color-ui-grey,
+	"riverstone": $color-riverstone,
+	"white": $color-white,
+);
+
+@each $name,
+$color in $colors {
+	.a-all_bg_color--#{$name} {
+		background-color: $color;
+	}
+
+	.a-all_color--#{$name} {
+		color: $color;
+	}
+}
