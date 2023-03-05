@@ -17,24 +17,23 @@ $color-riverstone: #f5f6f8;
 $color-white: #ffffff;
 
 $colors: (
-	"primary": $color-primary,
-	"primary-hover": $color-primary-hover,
-	"primary-selected": $color-primary-selected,
-	"positive": $color-positive,
-	"positive-hover": $color-positive-hover,
-	"positive-selected": $color-positive-selected,
-	"negative": $color-negative,
-	"negative-hover": $color-negative-hover,
-	"negative-selected": $color-negative-selected,
-	"dark": $color-dark,
-	"wolf-grey": $color-wolf-grey,
-	"ui-grey": $color-ui-grey,
-	"riverstone": $color-riverstone,
-	"white": $color-white,
+	'primary': $color-primary,
+	'primary-hover': $color-primary-hover,
+	'primary-selected': $color-primary-selected,
+	'positive': $color-positive,
+	'positive-hover': $color-positive-hover,
+	'positive-selected': $color-positive-selected,
+	'negative': $color-negative,
+	'negative-hover': $color-negative-hover,
+	'negative-selected': $color-negative-selected,
+	'dark': $color-dark,
+	'wolf-grey': $color-wolf-grey,
+	'ui-grey': $color-ui-grey,
+	'riverstone': $color-riverstone,
+	'white': $color-white,
 );
 
-@each $name,
-$color in $colors {
+@each $name, $color in $colors {
 	.a-all_bg_color--#{$name} {
 		background-color: $color;
 	}
