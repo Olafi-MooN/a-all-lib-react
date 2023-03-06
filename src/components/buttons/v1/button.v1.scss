@@ -1,28 +1,37 @@
 @import '../../../styles/styles.scss';
 
 $kinds: (
-	"primary": ("background-color": $hex-primary,
-		"color": $hex-text-primary,
-		"border": 1px solid $hex-border),
-	"secondary": ("background-color": $hex-secondary,
-		"color": $hex-text-secondary,
-		"border": 1px solid $hex-border,
+	'primary': (
+		'background-color': $hex-primary,
+		'color': $hex-text-primary,
+		'border': 1px solid $hex-border,
 	),
-	"tertiary": ("background-color": $hex-tertiary,
-		"color": $hex-text-tertiary)
+	'secondary': (
+		'background-color': $hex-secondary,
+		'color': $hex-text-secondary,
+		'border': 1px solid $hex-border,
+	),
+	'tertiary': (
+		'background-color': $hex-tertiary,
+		'color': $hex-text-tertiary,
+	),
 );
 
 $sizes: (
-	"small": ("padding": $p-1),
-	"medium": ("padding": $p-2),
-	"large": ("padding": $p-3),
+	'small': (
+		'padding': $p-1,
+	),
+	'medium': (
+		'padding': $p-2,
+	),
+	'large': (
+		'padding': $p-3,
+	),
 );
 
 @mixin button-v1($name, $properties) {
 	&.a-all_kind--#{$name} {
-
-		@each $key,
-		$property in $properties {
+		@each $key, $property in $properties {
 			#{$key}: $property;
 		}
 	}
@@ -35,13 +44,11 @@ $sizes: (
 	transition: transform all 0.2s ease-in-out;
 	font-weight: 400;
 
-	@each $kind,
-	$properties in $kinds {
+	@each $kind, $properties in $kinds {
 		@include button-v1($kind, $properties);
 	}
 
-	@each $key,
-	$properties in $sizes {
+	@each $key, $properties in $sizes {
 		.a-all_size--#{$key} {
 			padding: map-get($properties, 'padding');
 		}

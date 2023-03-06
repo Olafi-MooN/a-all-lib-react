@@ -30,7 +30,6 @@ $hex-text-primary: $hex-white;
 $hex-text-secondary: $hex-dark;
 $hex-text-tertiary: $hex-dark;
 
-
 $colors: (
 	'primary': $hex-primary,
 	'primary-hover': $hex-primary-hover,
@@ -48,8 +47,7 @@ $colors: (
 	'white': $hex-white,
 );
 
-@each $name,
-$color in $colors {
+@each $name, $color in $colors {
 	.a-all_bg_color--#{$name} {
 		background-color: $color;
 	}
