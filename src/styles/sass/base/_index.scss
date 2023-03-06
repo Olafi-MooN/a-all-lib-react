@@ -2,18 +2,14 @@
 @import './_colors.scss';
 @import './_reset.scss';
 
-.a-all_radius--1 {
-	border-radius: $radius-1;
+.a-all_radius--small {
+	border-radius: $radius-small;
 }
 
-.a-all_radius--2 {
-	border-radius: $radius-2;
+.a-all_radius--medium {
+	border-radius: $radius-medium;
 }
 
-.a-all_radius--3 {
-	border-radius: $radius-3;
-}
-
-.a-all_radius--4 {
-	border-radius: $radius-4;
+.a-all_radius--large {
+	border-radius: $radius-large;
 }

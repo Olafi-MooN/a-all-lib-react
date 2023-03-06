@@ -5,20 +5,14 @@ import { BlockStories } from '../../../__stories__/components/block-stories';
 
 <Meta title="components/buttons/v1" />
 
-# Checkbox
+# Button
 
-With `MDX`, we can define a story for `Checkbox` right in the middle of our
-Markdown documentation.
+## Tipos de botões
+
+Uma aplicação pode conter vários modelos de botões, abaixo temos os tipos de botões utilizados no design system da A-ALL
 
 <Canvas>
-	<AllButton
-		configStyle={{
-			bg_color: 'primary_hover',
-			radius: '1',
-			size: 'small',
-			color: 'WHITE',
-		}}
-	>
-		Primary Colors
-	</AllButton>
+	<AllButton kind="primary">Primary</AllButton>
+	<AllButton kind="secondary">Secondary</AllButton>
+	<AllButton kind="tertiary">Tertiary</AllButton>
 </Canvas>

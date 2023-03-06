@@ -1,39 +1,55 @@
-$color-primary: #0073ea;
-$color-primary-hover: #0060b9;
-$color-primary-selected: #cce5ff;
+$hex-primary: #0073ea;
+$hex-primary-hover: #0060b9;
+$hex-primary-selected: #cce5ff;
 
-$color-positive: #258750;
-$color-positive-hover: #007038;
-$color-positive-selected: #bbdbc9;
+$hex-secondary: #00000000;
+$hex-secondary-hover: #0060b9;
+$hex-secondary-selected: #cce5ff;
 
-$color-negative: #d83a52;
-$color-negative-hover: #d83a52;
-$color-negative-selected: #f4c3cb;
+$hex-tertiary: #00000000;
+$hex-tertiary-hover: #0060b9;
+$hex-tertiary-selected: #cce5ff;
 
-$color-dark: #323338;
-$color-wolf-grey: #c5c7d0;
-$color-ui-grey: #e6e9ef;
-$color-riverstone: #f5f6f8;
-$color-white: #ffffff;
+$hex-positive: #258750;
+$hex-positive-hover: #007038;
+$hex-positive-selected: #bbdbc9;
+
+$hex-negative: #d83a52;
+$hex-negative-hover: #d83a52;
+$hex-negative-selected: #f4c3cb;
+
+$hex-dark: #323338;
+$hex-wolf-grey: #c5c7d0;
+$hex-ui-grey: #e6e9ef;
+$hex-riverstone: #f5f6f8;
+$hex-white: #ffffff;
+
+$hex-border: #c3c6d4;
+
+$hex-text-primary: $hex-white;
+$hex-text-secondary: $hex-dark;
+$hex-text-tertiary: $hex-dark;
+
 
 $colors: (
-	'primary': $color-primary,
-	'primary-hover': $color-primary-hover,
-	'primary-selected': $color-primary-selected,
-	'positive': $color-positive,
-	'positive-hover': $color-positive-hover,
-	'positive-selected': $color-positive-selected,
-	'negative': $color-negative,
-	'negative-hover': $color-negative-hover,
-	'negative-selected': $color-negative-selected,
-	'dark': $color-dark,
-	'wolf-grey': $color-wolf-grey,
-	'ui-grey': $color-ui-grey,
-	'riverstone': $color-riverstone,
-	'white': $color-white,
+	'primary': $hex-primary,
+	'primary-hover': $hex-primary-hover,
+	'primary-selected': $hex-primary-selected,
+	'positive': $hex-positive,
+	'positive-hover': $hex-positive-hover,
+	'positive-selected': $hex-positive-selected,
+	'negative': $hex-negative,
+	'negative-hover': $hex-negative-hover,
+	'negative-selected': $hex-negative-selected,
+	'dark': $hex-dark,
+	'wolf-grey': $hex-wolf-grey,
+	'ui-grey': $hex-ui-grey,
+	'riverstone': $hex-riverstone,
+	'white': $hex-white,
 );
 
-@each $name, $color in $colors {
+@each $name,
+$color in $colors {
 	.a-all_bg_color--#{$name} {
 		background-color: $color;
 	}

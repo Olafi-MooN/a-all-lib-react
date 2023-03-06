@@ -1,16 +1,57 @@
 @import '../../../styles/styles.scss';
 
+$kinds: (
+	"primary": ("background-color": $hex-primary,
+		"color": $hex-text-primary,
+		"border": 1px solid $hex-border),
+	"secondary": ("background-color": $hex-secondary,
+		"color": $hex-text-secondary,
+		"border": 1px solid $hex-border,
+	),
+	"tertiary": ("background-color": $hex-tertiary,
+		"color": $hex-text-tertiary)
+);
+
+$sizes: (
+	"small": ("padding": $p-1),
+	"medium": ("padding": $p-2),
+	"large": ("padding": $p-3),
+);
+
+@mixin button-v1($name, $properties) {
+	&.a-all_kind--#{$name} {
+
+		@each $key,
+		$property in $properties {
+			#{$key}: $property;
+		}
+	}
+}
+
 .a-all_btn-v1 {
 	border: none;
 	padding: $p-2;
 	cursor: pointer;
 	transition: transform all 0.2s ease-in-out;
-}
+	font-weight: 400;
 
-.a-all_btn-v1:active {
-	transform: scale(0.95) translate3d(0, 0, 0);
-}
+	@each $kind,
+	$properties in $kinds {
+		@include button-v1($kind, $properties);
+	}
 
-.a-all_btn-v1:hover {
-	filter: brightness(0.9);
+	@each $key,
+	$properties in $sizes {
+		.a-all_size--#{$key} {
+			padding: map-get($properties, 'padding');
+		}
+	}
+
+	&:active {
+		transform: scale(0.95) translate3d(0, 0, 0);
+	}
+
+	&:hover {
+		filter: brightness(0.9);
+	}
 }

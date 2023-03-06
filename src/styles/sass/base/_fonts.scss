@@ -24,25 +24,23 @@ $font-weight-bold-s: 600;
 $font-weight-regular: 400;
 
 $font-sizes: (
-	'large': (
-		'font-size': $font-size-16,
+	'large': ('font-size': $font-size-16,
 		'line-height': $line-height-24,
 		'font-weight': $font-weight-bold-s,
 	),
-	'medium': (
-		'font-size': $font-size-14,
+	'medium': ('font-size': $font-size-14,
 		'line-height': $line-height-16,
 		'font-weight': $font-weight-bold-b,
 	),
-	'small': (
-		'font-size': $font-size-12,
+	'small': ('font-size': $font-size-12,
 		'line-height': $line-height-16,
 		'font-weight': $font-weight-bold-b,
 	),
 );
 
-@each $size, $properties in $font-sizes {
-	.a-all_size--#{$size} {
+@each $size,
+$properties in $font-sizes {
+	.a-all_font_size--#{$size} {
 		font-size: map-get($properties, 'font-size');
 		line-height: map-get($properties, 'line-height');
 		font-weight: map-get($properties, 'font-weight');
